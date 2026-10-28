@@ -1,0 +1,23 @@
+{
+  "phase": "deterministic_hypernetwork",
+  "updates": 1000,
+  "status": "complete",
+  "training_seconds": 6.124738083999546,
+  "last_minibatch_weight_mse": 0.2083020806312561,
+  "test_tasks_accessed": false,
+  "diffusion_trained": false,
+  "splits": {
+    "train": {
+      "hypernetwork": 0.883697509765625,
+      "shuffled": 0.504425048828125,
+      "pooled": 0.5273284912109375,
+      "analytic": 0.9051055908203125
+    },
+    "validation": {
+      "hypernetwork": 0.8572998046875,
+      "shuffled": 0.51123046875,
+      "pooled": 0.50006103515625,
+      "analytic": 0.9130859375
+    }
+  }
+}

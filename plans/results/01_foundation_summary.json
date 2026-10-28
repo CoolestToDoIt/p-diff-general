@@ -1,0 +1,23 @@
+{
+  "phase": "foundation_smoke",
+  "root_seed": 42,
+  "generator_trained": false,
+  "test_tasks_accessed": false,
+  "training_updates": 0,
+  "task_family": "diagonal_gaussian_binary_v1",
+  "tasks_per_split": 8,
+  "elapsed_seconds": 0.04610829200100852,
+  "torch": "2.14.1",
+  "splits": {
+    "train": {
+      "count": 8,
+      "mean_accuracy": 0.91650390625,
+      "worst_accuracy": 0.77734375
+    },
+    "validation": {
+      "count": 8,
+      "mean_accuracy": 0.892578125,
+      "worst_accuracy": 0.75390625
+    }
+  }
+}

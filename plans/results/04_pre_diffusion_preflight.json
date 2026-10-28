@@ -1,0 +1,9 @@
+{
+  "data_and_baselines_ready": true,
+  "terminal_alpha_bar": 4.03582976537568e-05,
+  "proposal_sha256": "fac2af5fbdda2ec9a9fa1497eb51e8bd325022a0802abffbb329c9a01a7b7085",
+  "diffusion_implemented": false,
+  "diffusion_trained": false,
+  "test_tasks_accessed": false,
+  "remaining": "Implement and test the proposed diffusion model before its first training run."
+}

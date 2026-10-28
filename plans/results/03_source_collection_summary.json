@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "completed_tasks": 320,
+  "elapsed_seconds": 16.302898125002685,
+  "generator_trained": false,
+  "test_tasks_accessed": false,
+  "source_below_70_percent": [],
+  "splits": {
+    "train": {
+      "source_accuracy": 0.9092254638671875,
+      "context_accuracy": 0.88720703125,
+      "analytic_accuracy": 0.9051055908203125,
+      "source_context_disagreement": 0.0745086669921875
+    },
+    "validation": {
+      "source_accuracy": 0.9139404296875,
+      "context_accuracy": 0.898193359375,
+      "analytic_accuracy": 0.9130859375,
+      "source_context_disagreement": 0.0703125
+    }
+  }
+}

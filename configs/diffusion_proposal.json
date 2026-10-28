@@ -1,0 +1,86 @@
+{
+  "status": "proposal_not_executed",
+  "benchmark_version": 1,
+  "root_seed": 42,
+  "training_seed": 42,
+  "train_tasks": 256,
+  "validation_tasks": 64,
+  "test_tasks_sealed": true,
+  "conditioning": {
+    "input": "labeled_context_only",
+    "examples": 64,
+    "encoder_width": 32,
+    "embedding_size": 64
+  },
+  "target": {
+    "architecture": "linear_8_2",
+    "dimensions": 18,
+    "normalization": "training_mean_std_clamped_0.05",
+    "canonicalize_on_export": true
+  },
+  "denoiser": {
+    "type": "residual_mlp",
+    "width": 128,
+    "blocks": 3,
+    "activation": "silu",
+    "time_embedding_size": 32
+  },
+  "diffusion": {
+    "objective": "epsilon_mse",
+    "steps": 1000,
+    "schedule": "linear_beta",
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "sampler": "ddpm",
+    "guidance": false
+  },
+  "optimization": {
+    "optimizer": "adam",
+    "learning_rate": 0.001,
+    "updates": 10000,
+    "batch_size": 64,
+    "cpu_threads": 1,
+    "wall_seconds_per_model": 600
+  },
+  "runs": [
+    "conditional",
+    "unconditional_zero_context_embedding"
+  ],
+  "evaluation": {
+    "generation_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "candidate_selection": "none",
+    "checkpoint": "last_update_only",
+    "query_selection": false,
+    "bootstrap_unit": "task",
+    "bootstrap_replicates": 2000,
+    "wall_seconds_total": 1200
+  },
+  "provisional_gate": {
+    "mean_gap_to_context_fit_minimum": -0.02,
+    "fraction_tasks_within_0.05_minimum": 0.8,
+    "require_positive_paired_gap_to_shuffled_and_unconditional": true
+  },
+  "automatic_retries": 0,
+  "test_evaluation_authorized": false
+}

@@ -1,0 +1,440 @@
+{
+  "fitting": {
+    "behavior_direct": {
+      "updates": 1000,
+      "status": "complete",
+      "seconds": 6.572131916000217,
+      "last_source_loss": 0.24108687043190002,
+      "seed": 42,
+      "residual": false,
+      "learning_rate": 0.001,
+      "batch_size": 32
+    },
+    "behavior_residual": {
+      "updates": 1000,
+      "status": "complete",
+      "seconds": 8.659553958998004,
+      "last_source_loss": 0.19269755482673645,
+      "seed": 42,
+      "residual": true,
+      "learning_rate": 0.001,
+      "batch_size": 32
+    }
+  },
+  "test_tasks_accessed": false,
+  "diffusion_trained": false,
+  "generation_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "splits": {
+    "train": {
+      "methods": {
+        "analytic": {
+          "mean_accuracy": 0.9051055908203125,
+          "worst_task_accuracy": 0.69921875,
+          "task_failure_rate_below_70_percent": 0.00390625,
+          "versus_context_fit": {
+            "mean_difference": 0.0178985595703125,
+            "task_bootstrap_95_percent": [
+              0.015472412109375,
+              0.02032470703125
+            ],
+            "fraction_within_five_points": 1.0
+          },
+          "versus_analytic": {
+            "mean_difference": 0.0,
+            "task_bootstrap_95_percent": [
+              0.0,
+              0.0
+            ],
+            "fraction_within_five_points": 1.0
+          }
+        },
+        "behavior_direct": {
+          "mean_accuracy": 0.890716552734375,
+          "worst_task_accuracy": 0.6953125,
+          "task_failure_rate_below_70_percent": 0.00390625,
+          "versus_context_fit": {
+            "mean_difference": 0.003509521484375,
+            "task_bootstrap_95_percent": [
+              -0.00018348693847656248,
+              0.00700416564941406
+            ],
+            "fraction_within_five_points": 0.953125
+          },
+          "versus_analytic": {
+            "mean_difference": -0.0143890380859375,
+            "task_bootstrap_95_percent": [
+              -0.017486572265625,
+              -0.0113983154296875
+            ],
+            "fraction_within_five_points": 0.92578125
+          }
+        },
+        "behavior_direct_shuffled": {
+          "mean_accuracy": 0.506378173828125,
+          "worst_task_accuracy": 0.125,
+          "task_failure_rate_below_70_percent": 0.890625,
+          "versus_context_fit": {
+            "mean_difference": -0.380828857421875,
+            "task_bootstrap_95_percent": [
+              -0.4014739990234375,
+              -0.35862388610839846
+            ],
+            "fraction_within_five_points": 0.0
+          },
+          "versus_analytic": {
+            "mean_difference": -0.3987274169921875,
+            "task_bootstrap_95_percent": [
+              -0.41978988647460935,
+              -0.3765087127685547
+            ],
+            "fraction_within_five_points": 0.0
+          }
+        },
+        "behavior_residual": {
+          "mean_accuracy": 0.9078521728515625,
+          "worst_task_accuracy": 0.7265625,
+          "task_failure_rate_below_70_percent": 0.0,
+          "versus_context_fit": {
+            "mean_difference": 0.0206451416015625,
+            "task_bootstrap_95_percent": [
+              0.0180206298828125,
+              0.02337646484375
+            ],
+            "fraction_within_five_points": 1.0
+          },
+          "versus_analytic": {
+            "mean_difference": 0.00274658203125,
+            "task_bootstrap_95_percent": [
+              0.0010829925537109374,
+              0.0045318603515625
+            ],
+            "fraction_within_five_points": 1.0
+          }
+        },
+        "behavior_residual_shuffled": {
+          "mean_accuracy": 0.5040435791015625,
+          "worst_task_accuracy": 0.0546875,
+          "task_failure_rate_below_70_percent": 0.921875,
+          "versus_context_fit": {
+            "mean_difference": -0.3831634521484375,
+            "task_bootstrap_95_percent": [
+              -0.4040985107421875,
+              -0.3623348236083984
+            ],
+            "fraction_within_five_points": 0.0078125
+          },
+          "versus_analytic": {
+            "mean_difference": -0.40106201171875,
+            "task_bootstrap_95_percent": [
+              -0.4222133636474609,
+              -0.38058242797851566
+            ],
+            "fraction_within_five_points": 0.0078125
+          }
+        },
+        "gaussian_unconditional": {
+          "mean_accuracy": 0.501803588704206,
+          "worst_task_accuracy": 0.4371093809604645,
+          "task_failure_rate_below_70_percent": 1.0,
+          "versus_context_fit": {
+            "mean_difference": -0.38540344254579395,
+            "task_bootstrap_95_percent": [
+              -0.39480142535758206,
+              -0.37571578901261093
+            ],
+            "fraction_within_five_points": 0.0
+          },
+          "versus_analytic": {
+            "mean_difference": -0.40330200211610645,
+            "task_bootstrap_95_percent": [
+              -0.4126491750095738,
+              -0.3937743950024014
+            ],
+            "fraction_within_five_points": 0.0
+          }
+        },
+        "gaussian_conditional": {
+          "mean_accuracy": 0.843476104317233,
+          "worst_task_accuracy": 0.600390613079071,
+          "task_failure_rate_below_70_percent": 0.125,
+          "versus_context_fit": {
+            "mean_difference": -0.043730926932767034,
+            "task_bootstrap_95_percent": [
+              -0.049054986931150776,
+              -0.03878902490832843
+            ],
+            "fraction_within_five_points": 0.609375
+          },
+          "versus_analytic": {
+            "mean_difference": -0.061629486503079534,
+            "task_bootstrap_95_percent": [
+              -0.0666570090164896,
+              -0.056526967411628
+            ],
+            "fraction_within_five_points": 0.4296875
+          }
+        },
+        "context_fit": {
+          "mean_accuracy": 0.88720703125,
+          "worst_task_accuracy": 0.67578125,
+          "task_failure_rate_below_70_percent": 0.01171875,
+          "versus_context_fit": {
+            "mean_difference": 0.0,
+            "task_bootstrap_95_percent": [
+              0.0,
+              0.0
+            ],
+            "fraction_within_five_points": 1.0
+          },
+          "versus_analytic": {
+            "mean_difference": -0.0178985595703125,
+            "task_bootstrap_95_percent": [
+              -0.02032470703125,
+              -0.015472412109375
+            ],
+            "fraction_within_five_points": 0.93359375
+          }
+        },
+        "previous": {
+          "mean_accuracy": 0.883697509765625,
+          "worst_task_accuracy": 0.62109375,
+          "task_failure_rate_below_70_percent": 0.03125,
+          "versus_context_fit": {
+            "mean_difference": -0.003509521484375,
+            "task_bootstrap_95_percent": [
+              -0.0076751708984375,
+              0.0003513336181640604
+            ],
+            "fraction_within_five_points": 0.9375
+          },
+          "versus_analytic": {
+            "mean_difference": -0.0214080810546875,
+            "task_bootstrap_95_percent": [
+              -0.025421142578125,
+              -0.01786766052246094
+            ],
+            "fraction_within_five_points": 0.8671875
+          }
+        }
+      },
+      "weight_error_accuracy_gap_correlation": -0.3636284163664172,
+      "direction_cosine_accuracy_gap_correlation": 0.5025551658243778
+    },
+    "validation": {
+      "methods": {
+        "analytic": {
+          "mean_accuracy": 0.9130859375,
+          "worst_task_accuracy": 0.75390625,
+          "task_failure_rate_below_70_percent": 0.0,
+          "versus_context_fit": {
+            "mean_difference": 0.014892578125,
+            "task_bootstrap_95_percent": [
+              0.01092529296875,
+              0.01898193359375
+            ],
+            "fraction_within_five_points": 1.0
+          },
+          "versus_analytic": {
+            "mean_difference": 0.0,
+            "task_bootstrap_95_percent": [
+              0.0,
+              0.0
+            ],
+            "fraction_within_five_points": 1.0
+          }
+        },
+        "behavior_direct": {
+          "mean_accuracy": 0.8651123046875,
+          "worst_task_accuracy": 0.6484375,
+          "task_failure_rate_below_70_percent": 0.03125,
+          "versus_context_fit": {
+            "mean_difference": -0.0330810546875,
+            "task_bootstrap_95_percent": [
+              -0.04388580322265625,
+              -0.023005676269531275
+            ],
+            "fraction_within_five_points": 0.703125
+          },
+          "versus_analytic": {
+            "mean_difference": -0.0479736328125,
+            "task_bootstrap_95_percent": [
+              -0.0579254150390625,
+              -0.03790130615234376
+            ],
+            "fraction_within_five_points": 0.578125
+          }
+        },
+        "behavior_direct_shuffled": {
+          "mean_accuracy": 0.51141357421875,
+          "worst_task_accuracy": 0.15625,
+          "task_failure_rate_below_70_percent": 0.890625,
+          "versus_context_fit": {
+            "mean_difference": -0.38677978515625,
+            "task_bootstrap_95_percent": [
+              -0.43055572509765627,
+              -0.34343109130859384
+            ],
+            "fraction_within_five_points": 0.046875
+          },
+          "versus_analytic": {
+            "mean_difference": -0.40167236328125,
+            "task_bootstrap_95_percent": [
+              -0.4458648681640625,
+              -0.35778350830078126
+            ],
+            "fraction_within_five_points": 0.0
+          }
+        },
+        "behavior_residual": {
+          "mean_accuracy": 0.90277099609375,
+          "worst_task_accuracy": 0.69140625,
+          "task_failure_rate_below_70_percent": 0.015625,
+          "versus_context_fit": {
+            "mean_difference": 0.00457763671875,
+            "task_bootstrap_95_percent": [
+              -0.00354156494140625,
+              0.010804748535156242
+            ],
+            "fraction_within_five_points": 0.953125
+          },
+          "versus_analytic": {
+            "mean_difference": -0.01031494140625,
+            "task_bootstrap_95_percent": [
+              -0.0169097900390625,
+              -0.00543212890625
+            ],
+            "fraction_within_five_points": 0.953125
+          }
+        },
+        "behavior_residual_shuffled": {
+          "mean_accuracy": 0.5059814453125,
+          "worst_task_accuracy": 0.12109375,
+          "task_failure_rate_below_70_percent": 0.875,
+          "versus_context_fit": {
+            "mean_difference": -0.3922119140625,
+            "task_bootstrap_95_percent": [
+              -0.4390899658203125,
+              -0.3459381103515625
+            ],
+            "fraction_within_five_points": 0.015625
+          },
+          "versus_analytic": {
+            "mean_difference": -0.4071044921875,
+            "task_bootstrap_95_percent": [
+              -0.4528839111328125,
+              -0.36193695068359377
+            ],
+            "fraction_within_five_points": 0.0
+          }
+        },
+        "gaussian_unconditional": {
+          "mean_accuracy": 0.5053192120976746,
+          "worst_task_accuracy": 0.42402344942092896,
+          "task_failure_rate_below_70_percent": 1.0,
+          "versus_context_fit": {
+            "mean_difference": -0.3928741472773254,
+            "task_bootstrap_95_percent": [
+              -0.4112110910820775,
+              -0.374621965456754
+            ],
+            "fraction_within_five_points": 0.0
+          },
+          "versus_analytic": {
+            "mean_difference": -0.4077667254023254,
+            "task_bootstrap_95_percent": [
+              -0.4251345866941847,
+              -0.39010254044551407
+            ],
+            "fraction_within_five_points": 0.0
+          }
+        },
+        "gaussian_conditional": {
+          "mean_accuracy": 0.8549072276800871,
+          "worst_task_accuracy": 0.605273425579071,
+          "task_failure_rate_below_70_percent": 0.078125,
+          "versus_context_fit": {
+            "mean_difference": -0.04328613169491291,
+            "task_bootstrap_95_percent": [
+              -0.053486168500967324,
+              -0.03373992671258748
+            ],
+            "fraction_within_five_points": 0.625
+          },
+          "versus_analytic": {
+            "mean_difference": -0.05817870981991291,
+            "task_bootstrap_95_percent": [
+              -0.06795738632790745,
+              -0.0487394706113264
+            ],
+            "fraction_within_five_points": 0.546875
+          }
+        },
+        "context_fit": {
+          "mean_accuracy": 0.898193359375,
+          "worst_task_accuracy": 0.72265625,
+          "task_failure_rate_below_70_percent": 0.0,
+          "versus_context_fit": {
+            "mean_difference": 0.0,
+            "task_bootstrap_95_percent": [
+              0.0,
+              0.0
+            ],
+            "fraction_within_five_points": 1.0
+          },
+          "versus_analytic": {
+            "mean_difference": -0.014892578125,
+            "task_bootstrap_95_percent": [
+              -0.01898193359375,
+              -0.01092529296875
+            ],
+            "fraction_within_five_points": 0.96875
+          }
+        },
+        "previous": {
+          "mean_accuracy": 0.8572998046875,
+          "worst_task_accuracy": 0.56640625,
+          "task_failure_rate_below_70_percent": 0.046875,
+          "versus_context_fit": {
+            "mean_difference": -0.0408935546875,
+            "task_bootstrap_95_percent": [
+              -0.0560333251953125,
+              -0.02715911865234376
+            ],
+            "fraction_within_five_points": 0.703125
+          },
+          "versus_analytic": {
+            "mean_difference": -0.0557861328125,
+            "task_bootstrap_95_percent": [
+              -0.07043609619140626,
+              -0.04247894287109376
+            ],
+            "fraction_within_five_points": 0.609375
+          }
+        }
+      },
+      "weight_error_accuracy_gap_correlation": -0.4581894934767603,
+      "direction_cosine_accuracy_gap_correlation": 0.6753814003427131
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "root_seed": 42,
+  "family": "diagonal_gaussian_binary_v1",
+  "input_size": 8,
+  "classes": 2,
+  "target_architecture": "linear_8_2",
+  "task_counts": {"train": 256, "validation": 64, "test": 64},
+  "examples_per_task": {"context": 64, "source": 256, "query": 256},
+  "test_tasks_sealed": true
+}

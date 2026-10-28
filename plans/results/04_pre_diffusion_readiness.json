@@ -1,0 +1,40 @@
+{
+  "training_bundle_sha256": "4979e642037e1b0118a4438fddbf3cd2e3e0786a299c4048392f5c058f71d7bb",
+  "training_tasks": 256,
+  "validation_tasks": 64,
+  "test_tasks_accessed": false,
+  "diffusion_implemented": false,
+  "diffusion_trained": false,
+  "baseline_runs_complete": true,
+  "next_step": "Review measured baseline gates and the bounded diffusion proposal before training.",
+  "baseline_gates": {
+    "behavior_direct": {
+      "within_two_points_of_context_fit": false,
+      "at_least_80_percent_tasks_within_five_points": false,
+      "conditioning_improvement_interval_above_zero": true,
+      "paired_versus_shuffled": {
+        "mean_difference": 0.35369873046875,
+        "task_bootstrap_95_percent": [
+          0.308221435546875,
+          0.39871368408203106
+        ],
+        "fraction_within_five_points": 1.0
+      },
+      "beats_analytic_mean": false
+    },
+    "behavior_residual": {
+      "within_two_points_of_context_fit": true,
+      "at_least_80_percent_tasks_within_five_points": true,
+      "conditioning_improvement_interval_above_zero": true,
+      "paired_versus_shuffled": {
+        "mean_difference": 0.39678955078125,
+        "task_bootstrap_95_percent": [
+          0.34862518310546875,
+          0.44311828613281246
+        ],
+        "fraction_within_five_points": 1.0
+      },
+      "beats_analytic_mean": false
+    }
+  }
+}
